@@ -66,6 +66,8 @@ yarn sendmail
 
 指定したメールアドレス宛にテストメールを送信します。
 
+#### メール設定
+
 メールの設定はルート直下の `.env` ファイルに記載します。
 ファイルが存在しない場合は以下のような内容でファイルを作成します。
 
@@ -79,3 +81,11 @@ GMAIL_USER_PASSWORD=Gmailのアプリパスワード
 ※アプリパスワードの発行方法については以下のURLを参照
 
 https://support.google.com/accounts/answer/185833?hl=ja
+
+`mailer/send_mail.ts` のテンプレートのパスの値をbuildして生成したhtmlファイルを指定しいます。
+
+```typescript
+// HTMLメールのメールテンプレートファイルのパス
+const templatePath = path.resolve(__dirname, '../build/template/index.html')
+const htmlTemplate = fs.readFileSync(templatePath, 'utf8')
+```
