@@ -1,6 +1,6 @@
 {
   "name": "html-mail-template",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Basic setting of Gulp for create a new html mail",
   "scripts": {
     "dev": "NODE_ENV=development gulp dev",
