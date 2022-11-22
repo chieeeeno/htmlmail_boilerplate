@@ -4,6 +4,7 @@ import { createTransport } from 'nodemailer'
 const fs = require('fs')
 const path = require('path')
 
+// HTMLメールのメールテンプレートファイルのパス
 const templatePath = path.resolve(__dirname, '../build/template/index.html')
 const htmlTemplate = fs.readFileSync(templatePath, 'utf8')
 
@@ -24,8 +25,8 @@ const transporter = createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: process.env.AUTH_USER_ID, // Gメールアドレス
-    pass: process.env.AUTH_USER_PASSWORD, // パスワード
+    user: process.env.GMAIL_USER_ID, // Gメールアドレス
+    pass: process.env.GMAIL_USER_PASSWORD, // パスワード
   },
 })
 
