@@ -1,5 +1,5 @@
 @use 'sass:math';
-
+@use 'src/assets/scss/colors' as colors;
 
 table {
   border-spacing: 0;
@@ -13,4 +13,5 @@ table {
 .d-container {
   width: 100%;
   border-spacing: 0;
+  color: colors.$red;
 }
