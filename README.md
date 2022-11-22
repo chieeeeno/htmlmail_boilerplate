@@ -76,5 +76,6 @@ MAIL_SUBJECT=メールタイトル
 GMAIL_USER_ID=Gmailのメールアドレス
 GMAIL_USER_PASSWORD=Gmailのアプリパスワード
 ```
-アプリパスワードの発行方法については以下のURLを参照
+※アプリパスワードの発行方法については以下のURLを参照
+
 https://support.google.com/accounts/answer/185833?hl=ja
